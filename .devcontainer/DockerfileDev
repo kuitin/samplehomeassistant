@@ -1,0 +1,11 @@
+ARG BUILD_FROM
+FROM $BUILD_FROM
+
+RUN mkdir test
+# Copy data for add-on
+
+
+
+
+#CMD [ "/run.sh" ]
+# ENTRYPOINT ["/bin/bash"]
