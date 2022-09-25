@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  homeassistant:
+    volumes:
+        - .:/test
+    build:
+      context: .devcontainer/
+      dockerfile: DockerfileDev
+      args:
+        BUILD_FROM: "ghcr.io/hassio-addons/base-python/amd64:9.0.1"
+    image: foo-repro
+    container_name: foo-repro
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
