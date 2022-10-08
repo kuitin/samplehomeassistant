@@ -1,7 +1,7 @@
 import socket
 import struct
 
-MCAST_GRP = '224.0.0.251'
+MCAST_GRP = '224.0.0.1'
 MCAST_PORT = 5353
 IS_ALL_GROUPS = True
 print ("Start Multicast python server")
